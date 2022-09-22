@@ -379,7 +379,8 @@ extern "C" {
  * define LWIP_ERRNO_INCLUDE to <errno.h> or equivalent.
  */
 #if defined __DOXYGEN__
-#define LWIP_PROVIDE_ERRNO
+//#define LWIP_PROVIDE_ERRNO
+#define LWIP_ERRNO_INCLUDE <sys/errno.h>
 #endif
 
 /**
